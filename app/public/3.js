@@ -5,4 +5,6 @@ document.body.appendChild(iframe)
 window.onhashchange = function () {
   // 小练习，做个工具方法，取出query的值
   console.log(location.hash)
+  // location.hash.match(/[#&]()\=/)
+    console.log(location.hash);
 }

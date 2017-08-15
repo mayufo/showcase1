@@ -7,8 +7,9 @@
 var xhr = new XMLHttpRequest()
 xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
+        console.log(xhr.responseText) // 响应的数据
         window.name = xhr.responseText
-        location.href = 'http://y.stuq.com:7001/public/index.html'
+        location.href = 'http://y.stuq.com:7001/public/index.html' // 将嵌套的网页设置为相同的域名，此处就变为了同源策略
     }
 }
 xhr.open('GET', 'http://x.stuq.com:7001/json', true)

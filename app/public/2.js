@@ -4,6 +4,6 @@ xhr.onreadystatechange = function () {
     console.log(JSON.parse(xhr.responseText).msg)
   }
 }
-// xhr.withCredentials = true
+xhr.withCredentials = true
 xhr.open('GET', 'http://x.stuq.com:7001/cros')
 xhr.send(null)

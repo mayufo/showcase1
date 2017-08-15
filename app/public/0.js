@@ -31,3 +31,7 @@ xhr.onreadystatechange = function () {
 
 xhr.open('GET', 'http://y.stuq.com:7001/json', true)
 xhr.send(null)
+
+// post 会send一些值
+// get 会带参数  http://y.stuq.com:7001/json?name=mayufo
+// xhr.open('请求方法'， '请求url', 'true表示异步')

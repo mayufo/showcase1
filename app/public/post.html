@@ -7,7 +7,7 @@
 var xhr = new XMLHttpRequest()
 xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
-        parent.postMessage(xhr.responseText, '*')
+        parent.postMessage(xhr.responseText, '*')  // * 代表能够接受任何域
     }
 }
 xhr.open('GET', 'http://x.stuq.com:7001/json', true)

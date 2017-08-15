@@ -15,3 +15,4 @@ document.body.appendChild(script)
 // require(['http://x.stuq.com:7001/json?callback=define'], function (value) {
 //   console.log(value)
 // })
+
